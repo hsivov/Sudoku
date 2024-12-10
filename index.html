@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sudoku Solver</h1>
+        <table>
+            <tbody>
+                <tr data-row="0">
+                    <td data-column="0"><input type="text" data-row="0" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="0" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="0" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="0" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="0" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="0" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="0" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="0" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="0" data-col="8"></td>
+                </tr>
+                <tr data-row="1">
+                    <td data-column="0"><input type="text" data-row="1" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="1" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="1" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="1" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="1" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="1" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="1" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="1" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="1" data-col="8"></td>
+                </tr>
+                <tr data-row="2">
+                    <td data-column="0"><input type="text" data-row="2" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="2" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="2" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="2" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="2" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="2" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="2" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="2" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="2" data-col="8"></td>
+                </tr>
+                <tr data-row="3">
+                    <td data-column="0"><input type="text" data-row="3" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="3" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="3" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="3" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="3" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="3" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="3" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="3" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="3" data-col="8"></td>
+                </tr>
+                <tr data-row="4">
+                    <td data-column="0"><input type="text" data-row="4" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="4" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="4" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="4" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="4" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="4" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="4" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="4" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="4" data-col="8"></td>
+                </tr>
+                <tr data-row="5">
+                    <td data-column="0"><input type="text" data-row="5" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="5" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="5" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="5" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="5" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="5" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="5" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="5" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="5" data-col="8"></td>
+                </tr>
+                <tr data-row="6">
+                    <td data-column="0"><input type="text" data-row="6" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="6" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="6" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="6" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="6" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="6" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="6" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="6" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="6" data-col="8"></td>
+                </tr>
+                <tr data-row="7">
+                    <td data-column="0"><input type="text" data-row="7" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="7" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="7" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="7" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="7" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="7" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="7" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="7" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="7" data-col="8"></td>
+                </tr>
+                <tr data-row="8">
+                    <td data-column="0"><input type="text" data-row="8" data-col="0"></td>
+                    <td data-column="1"><input type="text" data-row="8" data-col="1"></td>
+                    <td data-column="2"><input type="text" data-row="8" data-col="2"></td>
+                    <td data-column="3"><input type="text" data-row="8" data-col="3"></td>
+                    <td data-column="4"><input type="text" data-row="8" data-col="4"></td>
+                    <td data-column="5"><input type="text" data-row="8" data-col="5"></td>
+                    <td data-column="6"><input type="text" data-row="8" data-col="6"></td>
+                    <td data-column="7"><input type="text" data-row="8" data-col="7"></td>
+                    <td data-column="8"><input type="text" data-row="8" data-col="8"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="result">
+            <p id="result">Result: </p>
+        </div>
+        <div class="button-group">
+            <button id="solve" class="btn solve">Solve</button>
+            <button id="clear" class="btn clear">Clear</button>
+        </div>
+    </div>
+    <footer>
+        Photo by <a href="https://unsplash.com/@bkaraivanov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bozhin Karaivanov</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-number-line-on-a-sheet-of-paper-yqcWOAHH1Rs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer>
+</body>
+</html>
